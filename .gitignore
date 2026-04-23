@@ -1,0 +1,44 @@
+runs/
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.venv/
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Model weights and checkpoints
+*.bin
+*.ckpt
+*.onnx
+*.pb
+*.pt
+*.pth
+*.safetensors
+
+# Compiled extensions and shared libraries
+*.dll
+*.dylib
+*.exe
+*.pyd
+*.so

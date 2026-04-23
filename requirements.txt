@@ -1,0 +1,59 @@
+# Unified environment for the pipeline:
+# 1. CogView3-main: text -> 2D image
+# 2. SD-T2I-360PanoImage-main: 2D image -> 360 panorama
+# 3. DreamScene360: panorama (.png) -> 3D scene
+#
+# Important assumptions for this unified environment:
+# - DreamScene360 is used only with an existing panorama image (.png).
+# - DreamScene360's internal text-to-panorama path is NOT used, so its old
+#   diffusers==0.10.2 dependency is intentionally excluded here.
+# - SD-T2I-360PanoImage-main is kept on diffusers==0.26.0 as recommended by
+#   its README.
+# - CogView3 should be run with its vendored diffusers source on PYTHONPATH,
+#   for example:
+#   PYTHONPATH=/home/hanyidong/project/3D_poem/CogView3-main/diffusers-main/src:$PYTHONPATH python ...
+#
+# CUDA assumption:
+# - This file assumes the CUDA 12.4 PyTorch wheels used by DreamScene360.
+
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+torch==2.4.1
+torchvision==0.19.1
+torchaudio==2.4.1
+
+numpy==1.23.5
+Pillow
+scipy
+tqdm
+matplotlib
+opencv-python
+h5py
+trimesh
+plyfile
+toml
+wget
+einops
+albumentations
+datasets
+timm
+kornia
+ninja
+torchmetrics
+pytorch_lightning==2.3.0
+
+accelerate>=1.0.0
+diffusers==0.26.0
+transformers>=4.45.0
+sentencepiece>=0.2.0
+safetensors>=0.4.5
+xformers
+triton
+
+realesrgan==0.3.0
+py360convert
+
+# DreamScene360 native/compiled dependencies
+../DreamScene360/tiny-cuda-nn/bindings/torch
+../DreamScene360/submodules/diff-gaussian-rasterization-depth
+../DreamScene360/submodules/simple-knn
