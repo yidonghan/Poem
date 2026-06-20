@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20771571.svg)](https://doi.org/10.5281/zenodo.20771571)
+
 # Poem Pipeline
 
 This directory packages a three-stage generation workflow:
