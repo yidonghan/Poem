@@ -8,6 +8,40 @@ This directory packages a three-stage generation workflow:
 2. Image -> 360 scene image
 3. 360 scene image -> 3D scene
 
+## Demo Videos
+
+The following videos show example 3D scene generation results. Full-resolution videos are available in the GitHub release assets.
+
+### Demo 1
+
+<video src="https://github.com/yidonghan/Poem/releases/download/v1.0.0/0.mp4" controls width="100%"></video>
+
+[Open Demo 1](https://github.com/yidonghan/Poem/releases/download/v1.0.0/0.mp4)
+
+### Demo 2
+
+<video src="https://github.com/yidonghan/Poem/releases/download/v1.0.0/4.mp4" controls width="100%"></video>
+
+[Open Demo 2](https://github.com/yidonghan/Poem/releases/download/v1.0.0/4.mp4)
+
+### Demo 3
+
+<video src="https://github.com/yidonghan/Poem/releases/download/v1.0.0/5.mp4" controls width="100%"></video>
+
+[Open Demo 3](https://github.com/yidonghan/Poem/releases/download/v1.0.0/5.mp4)
+
+### Demo 4
+
+<video src="https://github.com/yidonghan/Poem/releases/download/v1.0.0/6.mp4" controls width="100%"></video>
+
+[Open Demo 4](https://github.com/yidonghan/Poem/releases/download/v1.0.0/6.mp4)
+
+### Demo 5
+
+<video src="https://github.com/yidonghan/Poem/releases/download/v1.0.0/11.mp4" controls width="100%"></video>
+
+[Open Demo 5](https://github.com/yidonghan/Poem/releases/download/v1.0.0/11.mp4)
+
 The main entry is:
 
 ```bash
